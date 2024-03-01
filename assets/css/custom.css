@@ -1,0 +1,80 @@
+/* Write your custom CSS here */
+table.dataTable thead .sorting, table.dataTable thead .sorting_desc, table.dataTable thead .sorting_asc {
+    background-position: left;
+    padding-left: 20px !important;
+}
+
+.txt-blue{color:blue;}
+.txt-red{color:red;}
+.txt-green{color:green;}
+
+i.txt-blue, i.txt-red, i.txt-green{
+	cursor: pointer;
+}
+.advFilterDown,.advFilterUp{
+	font-weight:bold;
+	font-size:16px;
+	cursor:pointer;
+	float:right;
+}
+.advFilterDown::before { 
+  content: "Show ";
+}
+
+.advFilterDown::after { 
+  content: " \21CA";
+}
+
+.advFilterUp::before { 
+  content: "Hide ";
+}
+.advFilterUp::after { 
+  content: " \21C8";
+}
+#clearFilter{
+  cursor: pointer;
+  color: #0277bb;
+  margin-top: -18px;
+  font-size: 12px;
+  float: right;
+}
+.gridLink{
+  cursor: pointer;
+  color: #0277bb;
+}
+.hide_span{
+      display: none;
+    }
+    ul.dropdown-content{
+    width: 165px!important;
+  }
+  ul.dropdown-content li span{
+    font-size: 10px;
+  }
+
+  #loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    margin-left:250px;
+    margin-top:250px;
+  }   
+  .dataTables_wrapper .dataTables_processing{
+    top:-10%;
+    left:70%;
+  }
+   
+   
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
